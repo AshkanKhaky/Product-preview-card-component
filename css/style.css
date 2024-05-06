@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+
 }
 
 body{
@@ -12,6 +14,8 @@ body{
     align-items: center;
     justify-content: center;
     background-color: hsl(30, 38%, 92%);
+    font-family: Montserrat;
+    font-weight: 700;
 }
 
 a{
@@ -20,18 +24,107 @@ a{
 
 section{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     width: 90%;
     border-radius: 10px;
     overflow: hidden;
+    background-color: hsl(0, 0%, 100%);
 }
 
-img{
+.img{
     width: 100%;
 }
 
 picture{
     text-align: center;
 }
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+
+.s{
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+.p{
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: hsl(212, 21%, 14%);
+    font-family: Fraunces;
+    font-weight: 700;
+}
+
+.p2{
+    line-height: 1.5rem;
+}
+
+.card *{
+    margin: .6rem;
+}
+
+.p3{
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 2rem;
+    font-weight: bold; 
+    color: hsl(158, 36%, 37%);
+}
+
+.price{
+    display: flex;
+    align-items: center;
+}
+
+.s2{
+    text-decoration: line-through;
+}
+
+.a{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    padding: .5rem;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+.s3{
+    color: hsl(0, 0%, 100%);
+}
+
+.a:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+
+@media screen and (min-width:1200px) {
+    section{
+        flex-direction: row;
+        width: 40%;
+    }
+
+    .card{
+        width: 50%;
+        padding: 1.5rem;
+    }
+
+    .img{
+        height: 100%;
+    }
+
+    picture{
+        width: 50%;
+    }
+}
+
+
+
+
+
