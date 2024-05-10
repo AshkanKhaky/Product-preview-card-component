@@ -25,7 +25,8 @@ a{
 section{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    min-width: 20rem;
+    width: 80%;
     border-radius: 10px;
     overflow: hidden;
     background-color: hsl(0, 0%, 100%);
